@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1"><link rel="stylesheet" href="./singup1.css">
+<title>RESTAURANT</title>
+</head>
+<body>
+	<center>
+		<marquee behavior="" direction="right"></marquee><h1>WELLCOME </h1>
+    <h1>Signup Page</h1>
+	<form action="signup" method="post" enctype="multipart/form-data" style="height: fit-content;width: fit-content;">
+		<fieldset>
+			<legend >Enter Details Here,</legend>
+			<table>
+				<tr>
+					<th>
+						FullName:
+					</th>
+					<td>
+						<input type="text" name="fullname">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Password:
+					</th>
+					<td>
+						<input type="password" name="password">
+					</td>
+				</tr>
+                <tr>
+					<th>
+						Mobile:
+					</th>
+					<td>
+						<input type="tel" pattern="[0-9]{10}" name="mobile" required>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Email:
+					</th>
+					<td>
+						<input type="email" name="email">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Date of Birth:
+					</th>
+					<td>
+						<input type="date" name="dob" required>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Gender:
+					</th>
+					<td>
+						Male <input type="radio" value="male" name="gender">
+						Female <input type="radio" value="female" name="gender">
+						Other <input type="radio" value="other" name="gender">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Picture:
+                    </th>
+					<td>
+						<input type="file" name="picture">
+					</td>
+				</tr>
+
+				<tr>
+					<th>
+						Country:
+					</th>
+					<td>
+						<select name="country">
+							<option>India</option>
+							<option>Germany</option>
+							<option>Dubai</option>
+							<option>France</option>
+							<option>Uganda</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+			<button>
+				Signup
+			</button>
+			<button type="reset">
+				Reset
+			</button>
+			<br><br>
+			<a href="Login.html">Already have Account? Click here to Login</a>
+		</fieldset>
+	</form>
+</center>
+</body>
+</html>
